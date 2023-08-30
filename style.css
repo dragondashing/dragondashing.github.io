@@ -10,7 +10,7 @@ body{
 }
 
 nav{
-    background-color: plum;
+    background-color: lightskyblue;
 }
 
 #nav{
@@ -29,7 +29,7 @@ li{
 }
 
 header{
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ header{
 .cebianlan{
     width: 200px;
     height: 100%;
-    background-color: plum;
+    background-color: lightskyblue;
     float: left;
     margin-top: 10px;
 }
