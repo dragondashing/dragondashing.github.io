@@ -1,0 +1,65 @@
+html{
+    background-color: gray;
+}
+
+body{
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background-color: gray;
+}
+
+nav{
+    background-color: plum;
+}
+
+#nav{
+    text-decoration: none
+}
+
+#td{
+    font-size: 20px;
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+}
+
+li{
+    margin-top: 31px;
+}
+
+header{
+    font-size: 50px;
+    text-align: center;
+}
+
+.zhuti{
+    width: 1000px;
+    height: 600px;  
+}
+
+.cebianlan{
+    width: 200px;
+    height: 100%;
+    background-color: plum;
+    float: left;
+    margin-top: 10px;
+}
+
+.neirong{
+    width: 780px;
+    height: 100%;
+    background-color: white;
+    float: right;
+    margin-top: 10px;
+}
+
+#footer{
+    background-color: white;
+    width: 1000px;
+    height: 180px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 180px;
+}
+
