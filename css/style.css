@@ -1,0 +1,125 @@
+html{
+    background-color: gray;
+    font-size: 20px;
+}
+
+div.header{
+    background: url("../images/background.jpg") no-repeat;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+h1.header{
+    text-align: center;
+    font-size: 150px;
+    font-style: inherit;
+}
+
+/* 侧边栏左 */
+.left{
+  margin-top: 2%;
+  float: left;
+  width: 15%;
+  height: auto;
+  border:1px dashed #f3cece;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+ul.fenlei{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+  margin-top: 20px;
+}
+
+a.fenlei{
+    color: #000;
+    text-decoration: none;
+}
+
+/* 侧边栏右 */
+.right{
+    margin-top: 2%;
+    border:1px dashed #f3cece;
+    float: right;
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 设置搜索框 */
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+   
+  .searchTerm {
+    width: 100%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+   
+  .searchTerm:focus{
+    color: black;
+  }
+   
+  .searchButton {
+    width: 42px;
+    height: 32px;
+    border: 1px solid black;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+   /* 中间部分 */
+   .middle{
+    border:1px dashed #f3cece;
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 17%;
+    margin-right: 22%;
+   }
+
+   h4,header{
+    text-align: center;
+   }
+
+   .yuedu{
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 1% 2%;
+    border: 1px solid #f3cece;
+    background-color: gray;
+   }
+
+   .xiangqing{
+    color: #fff;
+   }
+
+   .zuozhe{
+    font-size: small;
+    color: #464646;
+    font-style:italic;
+    text-decoration: none;
+    margin-left: 20px;
+   }
