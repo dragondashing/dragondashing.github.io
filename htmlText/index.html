@@ -1,54 +1,113 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Quick hummus recipe</title>
-  </head>
-  <body>
-    <h1>宫保鸡丁的做法</h1>
-    <p>
-        <strong>宫保鸡丁</strong>，川菜系中的传统名菜，由鸡丁、干辣椒、花生米等炒制而成。由于其入口鲜辣，鸡肉的鲜嫩配合花生的香脆，广受大众欢迎。
-    </p>
-    <p>
-        相传宫保鸡丁是清朝光绪年间的署理四川总督丁宝桢所发明，是他招待客人时叫家厨煮的菜肴。由于丁宝桢后来被封为东宫少保（太子少保），所以被称为“丁宫保”，而这道菜亦被称为“宫保鸡丁”
-    </p>    
-    <h2>原料</h2>
-    <ul>
-        <li>去骨鸡胸肉：<strong>一斤八两</strong></li>
-        <li>干红辣椒：<strong>八钱</strong></li>
-        <li>炸花生米：<strong>一两五钱</strong></li>
-        <li>花椒粒：<strong>两大匙</strong></li>
-        <li>葱：<strong>两根（切段）</strong></li>
-        <li>蛋白：<strong>一个</strong></li>
-        <li>淀粉：<strong>三大匙</strong></li>
-        <li>酱油：<strong>两大匙</strong></li>
-        <li>蒜末：<strong>半茶匙</strong></li>
-        <li>糖：<strong>半茶匙</strong></li>
-        <li>白醋：<strong>一茶匙</strong></li>
-        <li>色拉油：<strong>适量</strong></li>
-        <li>盐：<strong>两茶匙</strong></li>
-    </ul>
-    
-    <h2>做法</h2>
-    <ol>
-        <li>先用蛋白一个、盐半茶匙及淀粉两大匙搅拌均匀，调成“腌料”，鸡胸肉切成约一厘米见方的碎丁并用“腌料”搅拌均匀，腌渍半小时。</li>
-        <li>用酱油一大匙、淀粉水一大匙、糖半茶匙、盐四分之一茶匙、白醋一茶匙、蒜末半茶匙调拌均匀，调成“综合调味料”。</li>
-        <li>鸡丁腌好以后，色拉油下锅烧热，先将鸡丁倒入锅内，用大火快炸半分钟，炸到变色之后，捞出来沥干油汁备用。</li>
-        <li>
-            在锅里留下约两大匙油，烧热后将切好的干辣椒下锅，用小火炒香后，再放入花椒粒和葱段一起爆香。随后鸡丁重新下锅，用大火快炒片刻后，再倒入“综合调味料”继续快炒。
-            <ul>
-                <li>如果你采用正宗川菜做法，最后只需加入花生米，炒拌几下就可以起锅了。</li>
-                <li>如果你在北方，可加入黄瓜丁、胡萝卜丁和花生米，翻炒后起锅。</li>
+    <meta name="viewport" content="width=device-width">  
+    <title>头部（属性、元素）</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/dragon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 页眉 -->
+    <div class="header">
+        <h1 class="header" style="color: aquamarine;">龙帅的个人博客</h1>
+    </div>
+    <!-- 侧边栏左 -->
+    <div class="left-top" id="WaitLst-left">
+        <nav>
+            <h2>分类</h2>
+            <ul class="fenlei">
+                <li class="fenlei"><a href="../index.html" class="fenlei">首页</a></li>
+                <li class="fenlei"><a href="#" class="fenlei">前端</a></li>
+                <li class="fenlei"><a href="#" class="fenlei">小程序</a></li>
             </ul>
-        </li>
-                
-    </ol>
+        </nav>
+    </div>
+    <!-- 侧边栏右 -->
+    <div class="right" id="WaitLst-right">
+        <nav>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="你想找什么?">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"><img src="../images/搜索.png" alt="搜索"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!-- 中间部分 -->
+    <div class="middle">
+        <article>
+            <h4>前端</h4>
+            <header style="font-size: 50px;">html文本处理基础</header>
+            <div class="head">
+                <p>HTML 的主要工作之一是赋予文本结构，使浏览器能够按照开发者的意图显示 HTML 文档。本文解释了 HTML 如何通过添加标题和段落、强调单词、创建列表等方式来构造文本。</p>
+                <ol>
+                    <li>标题和段落
+                        <ul>
+                            <li>在 HTML 中，每个段落是通过 p 元素标签进行定义的。</li>
+                            <li>每个标题（Heading）都必须被包裹在一个标题元素中。</li>
+                            <li>一共有六种标题元素标签——h1、h2、h3、h4、h5 和 h6。每个元素代表文档中不同级别的内容：h1 表示主标题，h2 表示二级子标题，h3 表示三级子标题，依此类推。</li>
+                            <p><a href="demo1.html">这有个例子</a></p>
+                        </ul>
+                    </li>
+                    <li>
+                        列表
+                        <ul>
+                            <li>无序列表用于标记列表项目顺序无关紧要的列表,每份无序的清单从 ul 元素开始，需要包裹清单上所有被列出的项目，然后就是用 li 元素把每个列出的项目单独包裹起来</li>
+                            <li>有序列表需要按照项目的顺序列出来，这个标记的结构和无序列表一样，但是需要用 ol 元素将所有项目包裹，而不是 ul</ul></li>
+                        </ul>
+                        <p class="beizhu"><strong>备注</strong>在某些特殊情况下可能会在列表中嵌套列表，同样可以实现，但是在使用的时候需要注意结构不要搞混</p>
+                    </li>
+                    <li>
+                        重点强调
+                        <ul>
+                            <li>在口语表达中，我们有时会强调某些字，用来改变这句话的意思。同样地，在书面用语中，我们可以使用斜体字来达到同样的效果。</li>
+                            <strong>例如</strong><br>
+                            <p>我很<em>庆幸</em>你没有<em>迟到</em>。</p>
+                            <li>为了强调重要的词，在口语方面我们往往用重音强调，在书面用语中则是用粗体字来达到强调的效果。</li>
+                            <div class="lizi">
+                                <strong>例如</strong><br>
+                                <p>这杯液体<strong>毒性很大</strong>。</p>
+                                <p>就指望你了，千万<strong>不要</strong>迟到！</p>
+                            </div>
+                            <li>斜体字、粗体字、下划线
+                                <ul>
+                                    <li>i 被用来传达传统上用斜体表达的意义：外国文字，分类名称，技术术语，一种思想</li>
+                                    <li>b 被用来传达传统上用粗体表达的意义：关键字，产品名称，引导句</li>
+                                    <li>u 被用来传达传统上用下划线表达的意义：专有名词，拼写错误</li>
+                                </ul>
+                            </li>
+                            <div class="lizi">
+                                <strong>例如</strong><br>
+                                <!-- 学名 -->
+                                <p>
+                                    红喉北蜂鸟（学名：<i>Archilocus colubris</i>）是北美东部最常见的蜂鸟品种。
+                                  </p>
     
-    <h2>大千鸡</h2>
-    <p>
-        <em>张大千</em>居加拿大期间，曾按自己喜好改变宫保鸡丁的做法，并传授当地厨师，厨师将之命名为“大千鸡”，以兹纪念。大千鸡与宫保鸡丁不同之处，是使用经细工去皮、出骨、剔膜的鸡腿肉，以干辣椒、豆瓣酱为味，而且不用花生。
-    </p>
-  </body>
+                                  <!-- 舶来词 -->
+                                  <p>
+                                    菜单上有好多舶来词汇，比如 <i lang="uk-latn">vatrushka</i>（东欧乳酪面包）、<i
+                                      lang="id"
+                                      >nasi goreng</i
+                                    >（印尼炒饭）以及 <i lang="fr">soupe à l'oignon</i>（法式洋葱汤）。
+                                  </p>
+    
+                                  <!-- 已知的错误书写 -->
+                                  <p>总有一天我会改掉写<u class="spelling-error">措字</u>的毛病。</p>
+    
+                                  <!-- 在定义中，被定义的术语 -->
+                                  <dl>
+                                    <dt>语义化 HTML</dt>
+                                    <dd>根据元素的<b>语义</b>意义而不是外观来使用它们。</dd>
+                                  </dl>
+                            </div>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <p>这是本小节的一个实例演示，可以点击链接查看。<a href="demo.html" title="这是本节的实例演示">实例演示</a></p>
+            <hr style='background-color:#f3cece; height:1px; border:none;'>
+        </article>
+    </div>
+</body>
 </html>
