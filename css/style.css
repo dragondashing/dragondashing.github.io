@@ -123,3 +123,7 @@ a.fenlei{
     text-decoration: none;
     margin-left: 20px;
    }
+
+   img {
+    display: block;
+  }
