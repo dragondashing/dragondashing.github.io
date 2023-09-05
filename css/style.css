@@ -18,10 +18,32 @@ h1.header{
     font-style: inherit;
 }
 
-/* 侧边栏左 */
-.left{
+/* 侧边栏左上 */
+/* .left-top{
   margin-top: 2%;
   float: left;
+  width: 15%;
+  height: auto;
+  border:1px dashed #f3cece;
+  text-align: center;
+  padding-bottom: 20px;
+} */
+
+#WaitLst-left{
+  position: fixed;
+  margin-top: 2%;
+  left: 2%;
+  width: 15%;
+  height: auto;
+  border:1px dashed #f3cece;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#WaitLst-right{
+  position: fixed;
+  margin-top: 2%;
+  right: 2%;
   width: 15%;
   height: auto;
   border:1px dashed #f3cece;
@@ -43,7 +65,6 @@ a.fenlei{
     color: #000;
     text-decoration: none;
 }
-
 /* 侧边栏右 */
 .right{
     margin-top: 2%;
@@ -95,8 +116,8 @@ a.fenlei{
     width: auto;
     height: auto;
     margin-top: 2%;
-    margin-left: 17%;
-    margin-right: 22%;
+    margin-left: 20%;
+    margin-right: 20%;
    }
 
    h4,header{
@@ -126,4 +147,19 @@ a.fenlei{
 
    img {
     display: block;
+  }
+
+  .beizhu{
+    width: 90%;
+    background-color: aquamarine;
+  }
+
+  .lizi{
+    width: 90%;
+    background-color: burlywood;
+  }
+
+  .zhuyi{
+    width: 90%;
+    background-color: darkslategray;
   }
