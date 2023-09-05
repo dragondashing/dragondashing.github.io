@@ -1,86 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文本格式进阶</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <title>头部（属性、元素）</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/dragon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>文本格式进阶</h1>
-    <ol>
-        <li>
-            <h2>引用示例</h2>
-            <ul>
-                <li>块级引用用blockquote元素，对应的链接用cite元素</li>
-                <li>行级引用用q元素，对应链接用cite元素</li>
-                <p><strong>例如：</strong>你好！欢迎访问我的激励网页！<a href="https://baike.baidu.com/item/%E5%AD%94%E5%AD%90/1584"><cite>孔子</cite></a>曰：</p>
-                <blockquote cite="https://zhidao.baidu.com/question/681587632639639252.html">
-                <p>
-                譬如为山，未成一篑，止，吾止也。譬如平地，虽覆一篑，进，吾往也。
-                </p>
-                </blockquote>
-                <p>要保持乐观，
-                <q cite="https://k.sina.cn/article_318688_0004dce000100zs77.html?from=job">不要说泄气的话</q>。
-                （源自 <a href="https://k.sina.cn/article_318688_0004dce000100zs77.html?from=job">
-                    <cite>新浪网（不要说泄气的话）</cite></a>。）
-                </p>
+    <!-- 页眉 -->
+    <div class="header">
+        <h1 class="header" style="color: aquamarine;" id="huidaodingbu">龙帅的个人博客</h1>
+    </div>
+    <!-- 侧边栏左 -->
+    <div class="left-top" id="WaitLst-left">
+        <nav>
+            <h2>分类</h2>
+            <ul class="fenlei">
+                <li class="fenlei"><a href="../index.html" class="fenlei">首页</a></li>
+                <li class="fenlei"><a href="#" class="fenlei">前端</a></li>
+                <li class="fenlei"><a href="#" class="fenlei">小程序</a></li>
             </ul>
-        </li>
-        <li>
-            <h2>缩略语</h2>
-            <ul>
-                <li> abbr——它常被用来包裹一个缩略语或缩写</li>
-                <li>鼠标悬停在缩略语上会提供相应的解释</li>
-                <p><strong>例如：</strong>美国国家航空航天局 <abbr title="美国航空航天局（英语：National Aeronautics and Space Administration，简称NASA）">NASA</abbr> 做了一些动人心弦的事情。</p>
-            </ul>
-        </li>
-        <li>
-            <h2>标记联系方式</h2>
-            <ul>
-                <li>用于标记联系方式的元素</li>
-                <li>由斜体体现</li>
-                <strong>例如：</strong><address>王二涵</address>
-                <li>如果有可跳转的页面也可直接添加超链接</li>
-                <strong>例如：</strong><address><a href="../wyh/index.html">王二涵</a>油头肥臀哥</address>
-            </ul>
-        </li>
-        <li>
-            <h2>上标和下标</h2>
-            <ul>
-                <li>使用日期、化学方程式、和数学方程式时会偶尔使用上标和下标，以确保它们的正确含义</li>
-                <li>sup--上标</li>
-                <li>sub--下标</li>
-                <p>
-                    <strong>例如：</strong> 咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。
-                </p>
-                <p><strong>例如：</strong>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>                  
-            </ul>
-        </li>
-        <li>
-            <h2>标记时间和日期</h2>
-            <ul>
-                <li>将时间和日期标记为可供机器识别的格式的time元素</li>
-                <p>
-                <strong>例如：</strong> </br>
-                标准简单日期：<br>
-                <time datetime="2016-01-20">20 January 2016</time></br>
-                只包含年份和月份：<br>
-                <time datetime="2016-01">January 2016</time></br>
-                只包含月份和日期：<br>
-                <time datetime="01-20">20 January</time></br>
-                只包含时间，小时和分钟数：<br>
-                <time datetime="19:30">19:30</time></br>
-                还可包含秒和毫秒：<br>
-                <time datetime="19:30:01.856">19:30:01.856</time></br>
-                日期和时间：<br>
-                <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></br>
-                含有时区偏移值的日期时间：<br>
-                <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time></br>
-                提及特定周：<br>
-                <time datetime="2016-W04">The fourth week of 2016</time>
-                </p>
-            </ul>
-        </li>
-    </ol>
+        </nav>
+    </div>
+    <!-- 侧边栏右 -->
+    <div class="right" id="WaitLst-right">
+        <nav>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="你想找什么?">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"><img src="../images/搜索.png" alt="搜索"></i>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!-- 中间部分 -->
+    <div class="middle">
+        <article>
+            <h4>前端</h4>
+            <header style="font-size: 50px;">文本格式进阶</header>
+            <div class="head">
+                <p>HTML 中有许多其他元素可以用于格式化文本，我们没有在 HTML 文字处理基础中提到它们。本文中所描述的元素虽然少有人知，但仍然值得去学习（尽管仍然不是完整的列表）。在这里你将了解标记引用、描述列表、计算机代码和其他相关文本、下标和上标、联系信息等。</p>
+                <ol>
+                    <li>
+                        <h2>引用示例</h2>
+                        <ul>
+                            <li>块级引用用blockquote元素，对应的链接用cite元素</li>
+                            <li>行级引用用q元素，对应链接用cite元素</li>
+                            <div class="lizi">
+                                <p><strong>例如：</strong>你好！欢迎访问我的激励网页！<a href="https://baike.baidu.com/item/%E5%AD%94%E5%AD%90/1584"><cite>孔子</cite></a>曰：</p>
+                                <blockquote cite="https://zhidao.baidu.com/question/681587632639639252.html">
+                                <p>
+                                譬如为山，未成一篑，止，吾止也。譬如平地，虽覆一篑，进，吾往也。
+                                </p>
+                                </blockquote>
+                                <p>要保持乐观，
+                                <q cite="https://k.sina.cn/article_318688_0004dce000100zs77.html?from=job">不要说泄气的话</q>。
+                                （源自 <a href="https://k.sina.cn/article_318688_0004dce000100zs77.html?from=job">
+                                    <cite>新浪网（不要说泄气的话）</cite></a>。）
+                                </p>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>缩略语</h2>
+                        <ul>
+                            <li> abbr——它常被用来包裹一个缩略语或缩写</li>
+                            <li>鼠标悬停在缩略语上会提供相应的解释</li>
+                            <div class="lizi">
+                                <p><strong>例如：</strong>美国国家航空航天局 <abbr title="美国航空航天局（英语：National Aeronautics and Space Administration，简称NASA）">NASA</abbr> 做了一些动人心弦的事情。</p>
+                            </div>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>标记联系方式</h2>
+                        <ul>
+                            <li>用于标记联系方式的元素</li>
+                            <li>由斜体体现</li>
+                            <div class="lizi"><strong>例如：</strong><address>王二涵</address></div>                            
+                            <li>如果有可跳转的页面也可直接添加超链接</li>
+                            <div class="lizi">
+                                <strong>例如：</strong><address><a href="../wyh/index.html">王二涵</a>油头肥臀哥</address>
+
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>上标和下标</h2>
+                        <ul>
+                            <li>使用日期、化学方程式、和数学方程式时会偶尔使用上标和下标，以确保它们的正确含义</li>
+                            <li>sup--上标</li>
+                            <li>sub--下标</li>
+                            <div class="lizi">
+                                <p>
+                                    <strong>例如：</strong> 咖啡因的化学方程式是 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。
+                                </p>
+                                <p><strong>例如：</strong>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
+                            </div>                 
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>标记时间和日期</h2>
+                        <ul>
+                            <li>将时间和日期标记为可供机器识别的格式的time元素</li>
+                            <div class="lizi">
+                                <p>
+                                    <strong>例如：</strong> </br>
+                                    标准简单日期：<br>
+                                    <time datetime="2016-01-20">20 January 2016</time></br>
+                                    只包含年份和月份：<br>
+                                    <time datetime="2016-01">January 2016</time></br>
+                                    只包含月份和日期：<br>
+                                    <time datetime="01-20">20 January</time></br>
+                                    只包含时间，小时和分钟数：<br>
+                                    <time datetime="19:30">19:30</time></br>
+                                    还可包含秒和毫秒：<br>
+                                    <time datetime="19:30:01.856">19:30:01.856</time></br>
+                                    日期和时间：<br>
+                                    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></br>
+                                    含有时区偏移值的日期时间：<br>
+                                    <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time></br>
+                                    提及特定周：<br>
+                                    <time datetime="2016-W04">The fourth week of 2016</time>
+                                    </p>
+                            </div>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <hr style='background-color:#f3cece; height:1px; border:none;'>
+        </article>
+    </div>
+    <script src="../script/script.js"></script>
 </body>
 </html>
