@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <title>超链接的应用</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../images/dragon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 页眉 -->
+    <div class="head" id="headif">
+        <iframe src="../../header.html" frameborder="0" scrolling="no" name="headFrame" class="headif"></iframe>      
+    </div>
+    <!-- 侧边栏左 -->
+    <div class="left" id="leftif">   
+    <iframe src="../../left.html" frameborder="0" scrolling="no" name="leftFrame" class="leftif"></iframe>
+    </div>
+    <!-- 侧边栏右 -->
+     <div class="right" id="rightif">
+        <iframe src="../../right.html" frameborder="0" scrolling="no" name="rightFrame" class="rightif"></iframe>
+     </div>
+    <!-- 中间部分 -->
+    <div class="middle" id="middle">
+        <article>
+            <h4>前端</h4>
+            <header style="font-size: 50px;">超链接的应用</header>
+            <div class="head">
+                <p>超链接是互联网提供的最令人兴奋的创新之一，它们从一开始就一直是互联网的一个特性，使互联网成为互联的网络。超链接使我们能够将我们的文档链接到任何其他文档（或其他资源），也可以链接到文档的指定部分，我们可以在一个简单的网址上提供应用程序。几乎任何网络内容都可以转换为链接，点击（或激活）超链接将使网络浏览器转到另一个网址</p>
+                <ol>
+                    <li>链接的解析
+                        <ul>
+                            <li>通过将文本或其他内容包裹在 <a> 元素内，并给它一个包含网址的 href 属性（也称为超文本引用或目标，它将包含一个网址）来创建一个基本链接。</li>
+                            <div class="lizi">
+                                <strong>例如：</strong>
+                                <p>
+                                    我创建了一个指向
+                                    <a href="../index.html">龙帅的个人博客</a>的链接。
+                                  </p>                                  
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        块级链接
+                        <ul>
+                            <li>任何内容，甚至块级内容都可以作为链接出现。如果想让标题元素变为链接，就把它包裹在链接元素（a）内，像这个代码段一样：</li>
+                            <div class="lizi">
+                                <strong>例如：</strong>
+                                <a href="../index.html">
+                                    <h1>龙帅的个人博客</h1>
+                                  </a>
+                                  <p>哈哈哈哈哈吼吼吼吼吼嘿嘿嘿嘿嘿</p>
+                                                                    
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        图片链接
+                        <ul>
+                            <li>如果有需要作为链接的图片，使用 a 元素来包裹要引用图片的 img 元素。</li>
+                            <div class="lizi">
+                                <strong>例如：</strong>
+                                <a href="../wyh/index.html">
+                                    <img src="../wyh/images/wyh1.png" alt="王一涵的丑照" />
+                                </a>                               
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        使用 title 属性添加支持信息
+                        <ul>
+                            <li>关于链接的补充信息，例如页面包含什么样的信息或需要注意的事情。当鼠标悬停在该链接上，就能出现提示信息</li>
+                            <div class="lizi">
+                                <strong>例如：</strong>
+                                <p>
+                                    我创建了一个指向<a href="../index.html" title="龙帅的个人博客">龙帅的个人博客</a>的超链接。
+                                </p>                             
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        文档片段
+                        <ul>
+                            <li>超链接除了可以链接到文档外，也可以链接到 HTML 文档的特定部分（被称为文档片段）。要做到这一点，你必须首先给要链接到的元素分配一个 id 属性。</li>
+                            <div class="lizi">
+                                <strong>例如：</strong>
+                                
+                                <p>
+                                   点击链接可回到文章顶部<a href="#huidaodingbu">回到顶部</a>。
+                                </p>                                                             
+                            </div>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <p>这是本小节的一个实例演示，通过超链接实现网页跳转，可以点击链接查看。<a href="demo.html" title="这是本节的实例演示">实例演示</a></p>
+            <hr style='background-color:#f3cece; height:1px; border:none;'>
+        </article>
+    </div>
+    <script src="../../javascript.js"></script>
+</body>
+</html>

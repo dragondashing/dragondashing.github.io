@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <title>html文本处理基础</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../images/dragon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 页眉 -->
+    <div class="head" id="headif">
+        <iframe src="../../header.html" frameborder="0" scrolling="no" name="headFrame" class="headif"></iframe>      
+    </div>
+    <!-- 侧边栏左 -->
+    <div class="left" id="leftif">   
+    <iframe src="../../left.html" frameborder="0" scrolling="no" name="leftFrame" class="leftif"></iframe>
+    </div>
+    <!-- 侧边栏右 -->
+     <div class="right" id="rightif">
+        <iframe src="../../right.html" frameborder="0" scrolling="no" name="rightFrame" class="rightif"></iframe>
+     </div>
+    <!-- 中间部分 -->
+    <div class="middle" id="middle">
+        <article>
+            <h4>前端</h4>
+            <header style="font-size: 50px;">html文本处理基础</header>
+            <div class="head">
+                <p>HTML 的主要工作之一是赋予文本结构，使浏览器能够按照开发者的意图显示 HTML 文档。本文解释了 HTML 如何通过添加标题和段落、强调单词、创建列表等方式来构造文本。</p>
+                <ol>
+                    <li>标题和段落
+                        <ul>
+                            <li>在 HTML 中，每个段落是通过 p 元素标签进行定义的。</li>
+                            <li>每个标题（Heading）都必须被包裹在一个标题元素中。</li>
+                            <li>一共有六种标题元素标签——h1、h2、h3、h4、h5 和 h6。每个元素代表文档中不同级别的内容：h1 表示主标题，h2 表示二级子标题，h3 表示三级子标题，依此类推。</li>
+                            <p><a href="demo1.html">这有个例子</a></p>
+                        </ul>
+                    </li>
+                    <li>
+                        列表
+                        <ul>
+                            <li>无序列表用于标记列表项目顺序无关紧要的列表,每份无序的清单从 ul 元素开始，需要包裹清单上所有被列出的项目，然后就是用 li 元素把每个列出的项目单独包裹起来</li>
+                            <li>有序列表需要按照项目的顺序列出来，这个标记的结构和无序列表一样，但是需要用 ol 元素将所有项目包裹，而不是 ul</ul></li>
+                        </ul>
+                        <p class="beizhu"><strong>备注</strong>在某些特殊情况下可能会在列表中嵌套列表，同样可以实现，但是在使用的时候需要注意结构不要搞混</p>
+                    </li>
+                    <li>
+                        重点强调
+                        <ul>
+                            <li>在口语表达中，我们有时会强调某些字，用来改变这句话的意思。同样地，在书面用语中，我们可以使用斜体字来达到同样的效果。</li>
+                            <strong>例如</strong><br>
+                            <p>我很<em>庆幸</em>你没有<em>迟到</em>。</p>
+                            <li>为了强调重要的词，在口语方面我们往往用重音强调，在书面用语中则是用粗体字来达到强调的效果。</li>
+                            <div class="lizi">
+                                <strong>例如</strong><br>
+                                <p>这杯液体<strong>毒性很大</strong>。</p>
+                                <p>就指望你了，千万<strong>不要</strong>迟到！</p>
+                            </div>
+                            <li>斜体字、粗体字、下划线
+                                <ul>
+                                    <li>i 被用来传达传统上用斜体表达的意义：外国文字，分类名称，技术术语，一种思想</li>
+                                    <li>b 被用来传达传统上用粗体表达的意义：关键字，产品名称，引导句</li>
+                                    <li>u 被用来传达传统上用下划线表达的意义：专有名词，拼写错误</li>
+                                </ul>
+                            </li>
+                            <div class="lizi">
+                                <strong>例如</strong><br>
+                                <!-- 学名 -->
+                                <p>
+                                    红喉北蜂鸟（学名：<i>Archilocus colubris</i>）是北美东部最常见的蜂鸟品种。
+                                  </p>
+    
+                                  <!-- 舶来词 -->
+                                  <p>
+                                    菜单上有好多舶来词汇，比如 <i lang="uk-latn">vatrushka</i>（东欧乳酪面包）、<i
+                                      lang="id"
+                                      >nasi goreng</i
+                                    >（印尼炒饭）以及 <i lang="fr">soupe à l'oignon</i>（法式洋葱汤）。
+                                  </p>
+    
+                                  <!-- 已知的错误书写 -->
+                                  <p>总有一天我会改掉写<u class="spelling-error">措字</u>的毛病。</p>
+    
+                                  <!-- 在定义中，被定义的术语 -->
+                                  <dl>
+                                    <dt>语义化 HTML</dt>
+                                    <dd>根据元素的<b>语义</b>意义而不是外观来使用它们。</dd>
+                                  </dl>
+                            </div>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <p>这是本小节的一个实例演示，可以点击链接查看。<a href="demo.html" title="这是本节的实例演示">实例演示</a></p>
+            <hr style='background-color:#f3cece; height:1px; border:none;'>
+        </article>
+    </div>
+    <script src="../../javascript.js"></script>
+</body>
+</html>

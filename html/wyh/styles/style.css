@@ -1,0 +1,45 @@
+html {
+    font-size: 10px;
+    font-family: "Open Sans";
+    background-color: #00539f;
+}
+
+body {
+    width: 600px; /*显示内容永远保持600像素宽*/
+    margin: 0 auto; /*外边距，0影响上下（上间距为0），auto影响左右（自动平均分配给左右）*/
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;/*内边距，上右下左的顺序依次排列*/
+    border: 5px solid black;/*边框，厚度为5像素，实线，黑色*/
+  }
+  
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+}
+h2{
+    font-size: 40px;
+    text-shadow: 3px 3px 1px black;
+    color: #00539f;
+}
+
+p,li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  button{
+    margin: auto;
+    cursor: pointer;
+  }

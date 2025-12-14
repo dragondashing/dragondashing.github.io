@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <title>多媒体与嵌入</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../images/dragon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 页眉 -->
+    <div class="head" id="headif">
+        <iframe src="../../header.html" frameborder="0" scrolling="no" name="headFrame" class="headif"></iframe>      
+    </div>
+    <!-- 侧边栏左 -->
+    <div class="left" id="leftif">   
+    <iframe src="../../left.html" frameborder="0" scrolling="no" name="leftFrame" class="leftif"></iframe>
+    </div>
+    <!-- 侧边栏右 -->
+     <div class="right" id="rightif">
+        <iframe src="../../right.html" frameborder="0" scrolling="no" name="rightFrame" class="rightif"></iframe>
+     </div>
+    <!-- 中间部分 -->
+    <div class="middle" id="middle">
+        <article>
+            <h4>前端</h4>
+            <header style="font-size: 50px;">多媒体与嵌入</header>
+            <div class="head">
+                <p>前面学习的都是有关页面或者文字的样式，接下来学习的是有关图片或者音频，探索怎样用 HTML 来让你的网页包含多媒体，包括可以包含图像的不同方式，以及怎样嵌入视频，甚至是整个其他的网页。</p>
+                <ol>
+                    <li><h2>HTML中的图片</h2>
+                        <ul>
+                            <strong>使用img元素</strong>
+                            <li>src（图片引用路径）</li>
+                            <li>alt（图片替换文本）</li>
+                            <li>width和height（宽度和高度）,需要注意设置正确的宽高比</li>
+                            <li>image title（图片标题），鼠标悬停显示备注消息</li>
+                        </ul>
+                        <div class="lizi">
+                            <strong>例如：</strong>
+                            <img src="../wyh/images/wyh1.png"
+                             alt="王一涵的油头肥臀"
+                             width="auto"
+                             height="auto"
+                             title="王一涵的油头肥臀">
+                        </div>
+                    </li>
+                    <li>
+                        <h2>通过为图片搭配说明文字的方式来说明图片（figure）</h2>
+                        <p>在图片下方显示文字说明，把img元素放入figure元素中，把需要说明的文字放入figcaption元素中</p>
+                        <div class="zhuyi">
+                            <strong>注意:</strong>
+                            <ul>
+                                <li>用简洁、易懂的方式表达意图。</li>
+                                <li>可以置于页面线性流的某处。</li>
+                                <li>为主要内容提供重要的补充说明</li>
+                            </ul>
+                        </div>
+                        <div class="lizi">
+                            <strong>例如：</strong>
+                            <figure>
+                                <img src="../wyh/images/wyh1.png"
+                                alt="王一涵的油头肥臀"
+                                width="auto"
+                                height="auto">
+                                <figcaption>王一涵的油头肥臀</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>CSS背景图片</h2>
+                        <p>可以使用css把图片嵌入网站中，充当背景图片</p>
+                    </li>
+                </ol>
+                <hr style='background-color:#f3cece; height:1px; border:none;'>
+        </article>
+    </div>
+    <script src="../../javascript.js"></script>
+</body>
+</html>

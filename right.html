@@ -1,0 +1,73 @@
+<style>
+    html{
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        margin: 0 0;
+    }
+    #WaitLst-right{
+        width: 100%;
+        height: 100%;
+        border:2px dashed #e0c33f;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    #WaitLst-right::-webkit-scrollbar{   /*滚动条基本样式，高度*/
+        width:10px;height:90%;
+    }
+    #WaitLst-right::-webkit-scrollbar-thumb {/*滚动条上层颜色*/
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 1px rgb(76, 198, 235);
+                background: rgba(0,0,0,0.2);
+            }
+    #WaitLst-right::-webkit-scrollbar-track {/*滚动条底层颜色*/
+                -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+                border-radius: 10px;
+                background: rgba(0,0,0,0.1);
+    }
+    li{
+        cursor: pointer;
+    }
+</style>
+<div class="right" id="WaitLst-right">
+    <nav>
+        <!-- <div class="search">
+            <input type="text" class="searchTerm" placeholder="你想找什么?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"><img src="images/搜索.png" alt="搜索"></i>
+            </button>
+        </div> -->
+        <div class="mulu">
+            <h3>目录</h3>
+            <h2>前端入门基础</h2>
+            <ul>
+                <li onclick="window.open('html/wyh/index.html')">我的第一个页面</li>
+                <li onclick="window.open('html/head/index.html')">头部（属性、元素）</li>
+                <li onclick="window.open('html/htmlText/index.html')">html文本处理基础</li>
+                <li onclick="window.open('html/hyperlinks/index.html')">超链接的应用</li>
+                <li onclick="window.open('html/advancedtextformat/index.html')">文本格式进阶</li>
+                <li onclick="window.open('html/architecture/index.html')">网站架构</li>
+                <li onclick="window.open('html/markletter/index.html')">标记信件</li>
+                <li onclick="window.open('html/multi-media/index.html')">多媒体与嵌入</li>
+                <li onclick="window.open('html/video/index.html')">音频与视频</li>
+            </ul>
+            <h2>小程序案例</h2>
+            <ul>
+                <li onclick="window.open('xiaochengxu/xiaochenxu-1.html')">本地生活-1</li>
+                <li onclick="window.open('xiaochengxu/xiaochenxu-2.html')">本地生活-2</li>
+                <li onclick="window.open('xiaochengxu/xiaochenxu-3.html')">本地生活-3</li>
+            </ul>
+            <h2>VUE框架</h2>
+            <ul>
+                <li onclick="window.open('vue/understandvue.html')">认识vue</li>
+                <li onclick="window.open('vue/shengruliaojie.html')">深入了解vue</li>
+                <li onclick="window.open('vue/xuanranVuezujian.html')">渲染Vue组件列表</li>
+            </ul>
+            <h2>圣诞树DEMO</h2>
+            <ul>
+                <li onclick="window.open('MerryChristmasDEMO/index.html')">简易圣诞树</li>
+                <li onclick="window.open('MerryChristmasDEMO/tree/chrustmas2.html')">圣诞树2</li>
+            </ul>
+        </div>
+    </nav>
+</div>
